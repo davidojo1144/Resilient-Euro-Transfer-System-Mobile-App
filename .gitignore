@@ -1,0 +1,18 @@
+# Root ignores
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+
+# Expo/React Native
+.expo/
+.expo-shared/
+app/.expo/
+app/.expo-shared/
+app/node_modules/
+app/dist/
+app/build/
+app/.cache/
+
+# Jest coverage
+coverage/

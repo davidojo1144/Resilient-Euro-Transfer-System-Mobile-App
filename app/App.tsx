@@ -6,7 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import NetInfo from '@react-native-community/netinfo';
 import { store, persistor, RootState } from './src/store/store';
 import { selectDisplayBalance, selectQueue, selectNetworkAvailable } from './src/store/selectors';
-import { enqueueAndProcess } from './src/domain/processor';
+import { enqueueAndProcess, processQueue } from './src/domain/processor';
 import { setConnectivity, setSimulationOffline } from './src/store/networkSlice';
 import { setServerBalance } from './src/store/walletSlice';
 import { getBalance, setNetworkBlocked } from './src/data/mockApi';
