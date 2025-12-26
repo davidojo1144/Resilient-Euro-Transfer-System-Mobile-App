@@ -4,17 +4,19 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import walletReducer from './walletSlice';
 import transactionsReducer from './transactionsSlice';
 import networkReducer from './networkSlice';
+import themeReducer from './themeSlice';
 
 const rootReducer = combineReducers({
   wallet: walletReducer,
   transactions: transactionsReducer,
   network: networkReducer,
+  theme: themeReducer,
 });
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['wallet', 'transactions', 'network'],
+  whitelist: ['wallet', 'transactions', 'network', 'theme'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -4,9 +4,12 @@ This app demonstrates a resilient mobile payment flow tailored for intermittent 
 
 ## Run
 
-- `npm install` (already run by scaffolding)
-- `npm run web` (for quick preview in browser)
-- `npm start` and open on Android/iOS (Expo Go)
+- `npx expo start` (recommended for mobile Expo development)
+  - Press `a` to open Android emulator or scan QR with Expo Go
+  - Press `w` to open Web preview
+  - Press `r` to reload
+
+- Alternative: `npm run web` (web-only preview)
 
 ## Scenarios
 

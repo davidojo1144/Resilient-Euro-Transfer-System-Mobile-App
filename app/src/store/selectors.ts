@@ -12,3 +12,5 @@ export const selectQueue = (state: RootState) => state.transactions.queue;
 
 export const selectNetworkAvailable = (state: RootState) =>
   state.network.isConnected && state.network.isInternetReachable && !state.network.simulationOffline;
+
+export const selectThemeMode = (state: RootState) => state.theme.mode;
